@@ -15,25 +15,29 @@
         font-family: arial,sans-serif;
         box-sizing: border-box;
     }
+    a[href*="#"] {
+   text-decoration: none;
+   
+}
     .container {
        width: 100%;
        display: flex;
        justify-content: center;
+       min-height: 92px;
 
     }
     nav {
     display: flex;
-    height: 80px;
+    height: 50px;
     width: 100%;
     justify-content: right;
     align-items: center;
-    padding-right: 10px;
+  
     }
     nav a {
-        padding: 25px 15px 0 0;
+        padding: 10px 10px 0 0;
         line-height: 24px;
-        text-decoration: none;
-        font-size: 17px;
+        font-size: 14px;
         color: rgba(0,0,0,0.87);
        
     }
@@ -42,15 +46,22 @@
         height: 35px;
     }
    section img{
-        margin: 0 0 20px 0;
+    margin: 0px 0 30px 0;
+    }
+    img[src*='https'] {
+        width: 272px;
+        height: 92px;
+       
     }
 .pesquisa {
     display: flex;
     justify-content: center;
+    width: 100%;
+    
 }
 .pesquisa div {
-    width: 482px;
-    height: 42px;
+    width: 582px;
+    height: 44px;
     border: 1px solid;
     border-radius: 30px;
     border: 1px solid #dfe1e5;
@@ -60,14 +71,12 @@
     box-shadow: 1px 1px 1px #c0c2c5;
 }
 input {
-    width: 370px;
-    height: 35px;
+    width: 447px;
+    height: 34px;
     border: none;
     margin: 3px 3px 3px 5px;
     font-size: 16px;
-   
-  
-    
+      
 }
 input:focus {
     box-shadow: 0 0 0 0;
@@ -79,32 +88,62 @@ input:focus {
     cursor: default;
 }
 svg {
-    margin: 3px 5px 0 0;
+    margin: 3px 5px 0 15px;
     cursor: pointer;
 }
 .button {
    display: flex;
-    justify-content: center;
+   justify-content: center;
   
 }
 button {
    
     width: 142px;
-    height: 34px;
-    margin: 28px 33px 0 0;
+    height: 36px;
+    margin: 20px 33px 0 0;
     border: 1px solid #f8f9fa;
     transition: .3s;
     cursor: pointer;
     background: #f8f9fa;
     border-radius: 5px;
     font-size: 14px;
-    
-
+   
 }
 button:hover{
   box-shadow: 1px 1px 1px #c0c2c5;;
 
+}
+section .vazio {
+    min-height:200px;
+    border: transparent;
+    box-shadow: 1px 0px 2px #dadce0;
 
+  
+    
+}
+.text {
+    padding: 15px 30px;
+   
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.row-1, 
+.row-2 {
+   margin: 20px;
+    font-size: 15px;
+   
+}
+.row-1 a, 
+.row-2 a {
+padding: 0 20px 0 20px;
+color: rgba(0,0,0,.54);
 }
 </style>
 <body>
@@ -148,21 +187,21 @@ button:hover{
       
     </header>
     <section>
-        <div></div>
-        <div>Brasil</div>
+        <div class="vazio">1</div>
+        <div class="text">Brasil</div>
         
     </section>
     <footer>
         <div class="row-1">
-            <a href="">Sobre</a>
-            <a href="">Publicidade</a>
-            <a href="">Negócios</a>
-            <a href="">Como funciona a Pesquisa</a>
+            <a href="#">Sobre</a>
+            <a href="#">Publicidade</a>
+            <a href="#">Negócios</a>
+            <a href="#">Como funciona a Pesquisa</a>
         </div>
         <div class="row-2">
-            <a href="">Privacidade</a>
-            <a href="">Termos</a>
-            <a href="">Configurações</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+            <a href="#">Configurações</a>
 
         </div>
        
